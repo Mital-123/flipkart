@@ -52,6 +52,7 @@ function FlipKartPdfSplitter() {
                     timer: 2000,
                     showConfirmButton: false,
                 });
+                fileInputRef.current.value = "";
                 fetchData();
             } else {
                 Swal.fire({
@@ -86,7 +87,7 @@ function FlipKartPdfSplitter() {
                 </div>
                 <h3 className="mb-4 text-center fw-bold">Flipkart PDF Splitter</h3>
 
-                <div className="card p-4 shadow">
+                <div className="card p-4 shadow border border-2 border-secondary">
                     <div className="mb-3">
                         <label htmlFor="formFile" className="form-label fw-medium">Select PDF</label>
                         <input
@@ -105,7 +106,7 @@ function FlipKartPdfSplitter() {
                     </div>
                 </div>
 
-                <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
+                {/* <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
                 <div style={{ maxWidth: '250px' }} className="mx-auto">
                     <ul className="list-group">
                         {splitFiles.map((item, index) => (
@@ -134,7 +135,7 @@ function FlipKartPdfSplitter() {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </div> */}
             </div>
         </div>
     );
