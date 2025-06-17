@@ -84,7 +84,7 @@ function AmazonPdfSplitter() {
                         </div>
                     </Link>
                 </div>
-                <h3 className="mb-4 text-center fw-medium">Amazon PDF Splitter</h3>
+                <h3 className="mb-4 text-center fw-bold">Amazon PDF Splitter</h3>
 
                 <div className="card p-4 shadow">
                     <div className="mb-3">
@@ -99,13 +99,13 @@ function AmazonPdfSplitter() {
                         />
                     </div>
                     <div className='text-center'>
-                        <button className="btn btn-primary fw-bold fs-6 px-3 py-2 overflow-hidden" onClick={handleUpload}>
-                            Upload & Split
+                        <button className="btn btn-success fw-bold fs-6 px-3 py-2 overflow-hidden" onClick={handleUpload}>
+                            Upload
                         </button>
                     </div>
                 </div>
 
-                <h4 className="mt-4 fw-medium text-center">Split Files</h4>
+                <h4 className="mt-4 fw-bold text-center">Split Files</h4>
                 <ul className="list-group">
                     {splitFiles.map((item, index) => (
                         <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
