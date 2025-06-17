@@ -99,37 +99,42 @@ function AmazonPdfSplitter() {
                         />
                     </div>
                     <div className='text-center'>
-                        <button className="btn btn-success fw-bold fs-6 px-3 py-2 overflow-hidden" onClick={handleUpload}>
+                        <button className="btn btn-success fw-bold fs-6 px-3 overflow-hidden" onClick={handleUpload}>
                             Upload
                         </button>
                     </div>
                 </div>
 
-                <h4 className="mt-4 fw-bold text-center">Split Files</h4>
-                <ul className="list-group">
-                    {splitFiles.map((item, index) => (
-                        <li key={index} className="list-group-item d-flex justify-content-between align-items-center">
-                            <div className='p-1'>
-                                <a
-                                    href={`https://flipcartbackend-y19u.onrender.com/${item.part1}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="me-3 btn btn-sm btn-outline-success overflow-hidden"
-                                >
-                                    Barcode File
-                                </a>
-                                <a
-                                    href={`https://flipcartbackend-y19u.onrender.com/${item.part2}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn btn-sm btn-outline-info overflow-hidden"
-                                >
-                                    Invoice File
-                                </a>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
+                <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
+                <div style={{ maxWidth: '250px' }} className="mx-auto">
+                    <ul className="list-group">
+                        {splitFiles.map((item, index) => (
+                            <li
+                                key={index}
+                                className="list-group-item d-flex justify-content-center"
+                            >
+                                <div className="p-1 d-flex justify-content-center gap-2 flex-wrap w-100">
+                                    <a
+                                        href={`https://flipcartbackend-y19u.onrender.com/${item.part1}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-sm btn-outline-success overflow-hidden"
+                                    >
+                                        Barcode File
+                                    </a>
+                                    <a
+                                        href={`https://flipcartbackend-y19u.onrender.com/${item.part2}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-sm btn-outline-info overflow-hidden"
+                                    >
+                                        Invoice File
+                                    </a>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </div>
     );
