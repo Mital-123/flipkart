@@ -113,7 +113,7 @@ function MeeshoPdfSplitter() {
                                 key={index}
                                 className="list-group-item d-flex justify-content-center"
                             >
-                                <div className="p-1 d-flex justify-content-center gap-2 flex-wrap w-100">
+                                <div className="p-1 d-flex justify-content-center gap-3 flex-wrap w-100">
                                     <a
                                         href={`https://flipcartbackend-y19u.onrender.com/${item.part1}`}
                                         target="_blank"
