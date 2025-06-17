@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { FaArrowLeftLong } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 function FlipKartPdfSplitter() {
@@ -75,6 +77,13 @@ function FlipKartPdfSplitter() {
     return (
         <div className='d-flex justify-content-center align-items-center'>
             <div className="container py-5" style={{ maxWidth: '600px' }}>
+                <div className="pb-5">
+                    <Link to={"/"}>
+                        <div className='text-start'>
+                            <button type='button' className='btn btn-dark fw-medium pb-2'><FaArrowLeftLong /></button>
+                        </div>
+                    </Link>
+                </div>
                 <h3 className="mb-4 text-center fw-medium">Flipkart PDF Splitter</h3>
 
                 <div className="card p-4 shadow">

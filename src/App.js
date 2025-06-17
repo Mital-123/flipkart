@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonCom from './Component/ButtonCom';
@@ -9,14 +9,14 @@ import AmazonPdfSplitter from './Component/AmazonPdfSplitter';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<ButtonCom />} />
           <Route path="/flipkart" element={<FlipKartPdfSplitter />} />
           <Route path="/meesho" element={<MeeshoPdfSplitter />} />
           <Route path="/amazon" element={<AmazonPdfSplitter />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
