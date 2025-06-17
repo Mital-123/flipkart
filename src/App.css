@@ -1,13 +1,17 @@
 /* ButtonCom start */
 .main-bg {
   min-height: 100vh;
-  background: linear-gradient(to right, #f8f9fa, #e6f0ff);
-  padding: 2rem;
+  /* background: linear-gradient(to right, #f8f9fa, #e6f0ff); */
+  background-image: url("https://img.freepik.com/premium-vector/white-abstract-background-design_1208459-106.jpg?ga=GA1.1.960358020.1744003470&semt=ais_hybrid&w=740");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
 }
 .upload-card {
   max-width: 600px;
   backdrop-filter: blur(20px);
-  background: #ffffff26;
+  background: #80808017;
   border: 3px solid grey;
   width: 100%;
 }

@@ -76,37 +76,43 @@ function AmazonPdfSplitter() {
     };
 
     return (
-        <div className='d-flex justify-content-center align-items-center'>
-            <div className="container py-4" style={{ maxWidth: '600px' }}>
-                <div className="pb-3">
-                    <Link to={"/"}>
-                        <div className='text-start'>
-                            <button type='button' className='btn btn-dark fw-medium pb-2'><FaArrowLeftLong /></button>
+        <div className='main-bg'>
+            <div className='d-flex justify-content-center align-items-center'>
+                <div className="container py-4" style={{ maxWidth: '600px' }}>
+                    <div className="pb-3">
+                        <Link to={"/"}>
+                            <div className='text-start'>
+                                <button type='button' className='btn btn-dark fw-medium pb-2'><FaArrowLeftLong /></button>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className='d-flex justify-content-center'>
+                        <div>
+                            <img src={require("../assets/Image/amazon_icon.png")} width={"35px"} alt="" />
                         </div>
-                    </Link>
-                </div>
-                <h3 className="mb-4 text-center fw-bold">Amazon PDF Splitter</h3>
-
-                <div className="card p-4 shadow border border-2 border-secondary">
-                    <div className="mb-3">
-                        <label htmlFor="formFile" className="form-label fw-medium">Select PDF</label>
-                        <input
-                            className="form-control"
-                            type="file"
-                            id="formFile"
-                            accept="application/pdf"
-                            multiple
-                            ref={fileInputRef}
-                        />
+                        <h3 className="mb-4 text-center fw-bold ms-1">Amazon</h3>
                     </div>
-                    <div className='text-center'>
-                        <button className="btn btn-success fw-bold fs-6 px-3 overflow-hidden" onClick={handleUpload}>
-                            Upload
-                        </button>
-                    </div>
-                </div>
 
-                {/* <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
+                    <div className="card p-4 shadow rounded-4" style={{ border: "4px ridge grey" }}>
+                        <div className="mb-3">
+                            <label htmlFor="formFile" className="form-label fw-medium">Select PDF</label>
+                            <input
+                                className="form-control border border-dark"
+                                type="file"
+                                id="formFile"
+                                accept="application/pdf"
+                                multiple
+                                ref={fileInputRef}
+                            />
+                        </div>
+                        <div className='text-center'>
+                            <button className="btn btn-success fw-bold fs-6 px-3 overflow-hidden" onClick={handleUpload}>
+                                Upload
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
                 <div style={{ maxWidth: '250px' }} className="mx-auto">
                     <ul className="list-group">
                         {splitFiles.map((item, index) => (
@@ -136,6 +142,7 @@ function AmazonPdfSplitter() {
                         ))}
                     </ul>
                 </div> */}
+                </div>
             </div>
         </div>
     );
