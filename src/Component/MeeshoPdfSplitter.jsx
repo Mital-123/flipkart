@@ -76,8 +76,8 @@ function MeeshoPdfSplitter() {
 
     return (
         <div className='d-flex justify-content-center align-items-center'>
-            <div className="container py-5" style={{ maxWidth: '600px' }}>
-                <div className="pb-5">
+            <div className="container py-4" style={{ maxWidth: '600px' }}>
+                <div className="pb-3">
                     <Link to={"/"}>
                         <div className='text-start'>
                             <button type='button' className='btn btn-dark fw-medium pb-2'><FaArrowLeftLong /></button>
