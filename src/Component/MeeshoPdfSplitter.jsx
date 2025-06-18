@@ -12,7 +12,7 @@ function MeeshoPdfSplitter() {
         try {
             const res = await fetch("https://flipcartbackend-y19u.onrender.com/getmeesho");
             const data = await res.json();
-            setSplitFiles(data);
+            setSplitFiles(data.reverse());
         } catch (error) {
             console.error("Failed to fetch files", error);
         }
@@ -142,7 +142,7 @@ function MeeshoPdfSplitter() {
                             ))}
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

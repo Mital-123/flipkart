@@ -12,7 +12,7 @@ function FlipKartPdfSplitter() {
         try {
             const res = await fetch("https://flipcartbackend-y19u.onrender.com/get");
             const data = await res.json();
-            setSplitFiles(data);
+            setSplitFiles(data.reverse());
         } catch (error) {
             console.error("Failed to fetch files", error);
         }
