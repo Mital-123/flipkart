@@ -76,7 +76,7 @@ function MeeshoPdfSplitter() {
     };
 
     return (
-        <div className='main-bg'>
+        <div>
             <div className='d-flex justify-content-center align-items-center'>
                 <div className="container py-4" style={{ maxWidth: '600px' }}>
                     <div className="pb-3">
@@ -112,36 +112,37 @@ function MeeshoPdfSplitter() {
                         </div>
                     </div>
 
-                    {/* <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
-                <div style={{ maxWidth: '250px' }} className="mx-auto">
-                    <ul className="list-group">
-                        {splitFiles.map((item, index) => (
-                            <li
-                                key={index}
-                                className="list-group-item d-flex justify-content-center"
-                            >
-                                <div className="p-1 d-flex justify-content-center gap-3 flex-wrap w-100">
-                                    <a
-                                        href={`https://flipcartbackend-y19u.onrender.com/${item.part1}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="btn btn-sm btn-outline-success overflow-hidden"
-                                    >
-                                        Barcode File
-                                    </a>
-                                    <a
-                                        href={`https://flipcartbackend-y19u.onrender.com/${item.part2}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="btn btn-sm btn-outline-info overflow-hidden"
-                                    >
-                                        Invoice File
-                                    </a>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
-                </div> */}
+                    <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
+                    <div style={{ maxWidth: '250px' }} className="mx-auto">
+                        <ul className="list-group">
+                            {splitFiles.map((item, index) => (
+                                <li
+                                    key={index}
+                                    className="list-group-item d-flex justify-content-center"
+                                >
+                                    <div className="p-1 d-flex justify-content-center gap-3 flex-wrap w-100">
+                                        <a
+                                            href={`https://flipcartbackend-y19u.onrender.com/${item.part1}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-sm btn-outline-success overflow-hidden"
+                                        >
+                                            Barcode File
+                                        </a>
+                                        <a
+                                            href={`https://flipcartbackend-y19u.onrender.com/${item.part2}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-sm btn-outline-info overflow-hidden"
+                                        >
+                                            Invoice File
+                                        </a>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </div>
