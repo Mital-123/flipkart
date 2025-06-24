@@ -10,7 +10,7 @@ function MeeshoPdfSplitter() {
 
     const fetchData = async () => {
         try {
-            const res = await fetch("https://flipcartbackend-y19u.onrender.com/getmeesho");
+            const res = await fetch("http://localhost:3001/getmeesho");
             const data = await res.json();
             setSplitFiles(data.reverse());
         } catch (error) {
@@ -39,7 +39,7 @@ function MeeshoPdfSplitter() {
         }
 
         try {
-            const res = await fetch("https://flipcartbackend-y19u.onrender.com/postmeesho", {
+            const res = await fetch("http://localhost:3001/postmeesho", {
                 method: "POST",
                 body: formData
             });
@@ -112,7 +112,7 @@ function MeeshoPdfSplitter() {
                         </div>
                     </div>
 
-                    <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
+                    {/* <h4 className="mt-4 mb-3 fw-bold text-center">Split Files</h4>
                     <div style={{ maxWidth: '250px' }} className="mx-auto">
                         <ul className="list-group">
                             {splitFiles.map((item, index) => (
@@ -122,7 +122,7 @@ function MeeshoPdfSplitter() {
                                 >
                                     <div className="p-1 d-flex justify-content-center gap-3 flex-wrap w-100">
                                         <a
-                                            href={`https://flipcartbackend-y19u.onrender.com/${item.part1}`}
+                                            href={`http://localhost:3001/${item.part1}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="btn btn-sm btn-outline-success overflow-hidden"
@@ -130,7 +130,7 @@ function MeeshoPdfSplitter() {
                                             Barcode File
                                         </a>
                                         <a
-                                            href={`https://flipcartbackend-y19u.onrender.com/${item.part2}`}
+                                            href={`http://localhost:3001/${item.part2}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="btn btn-sm btn-outline-info overflow-hidden"
@@ -141,7 +141,7 @@ function MeeshoPdfSplitter() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
